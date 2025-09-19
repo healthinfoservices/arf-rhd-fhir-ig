@@ -46,6 +46,12 @@ jobs:
       # 7. Run Sushi
       - name: Run Sushi
         run: sushi .
+      # Install Ruby and Jekyll for IG rendering
+      - name: Install Ruby and Jekyll
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ruby-full build-essential zlib1g-dev
+          gem install jekyll bundler
 
       # 8. Run IG Publisher
       - name: Run IG Publisher
