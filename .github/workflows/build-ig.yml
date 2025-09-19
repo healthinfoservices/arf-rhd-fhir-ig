@@ -14,6 +14,13 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
 
+      # 1a. Debug info to check if running from a fork
+      - name: Check if running from a fork
+        run: |
+          echo "Repository: $GITHUB_REPOSITORY"
+          echo "Event repository: $(jq -r .pull_request.head.repo.full_name < $GITHUB_EVENT_PATH || echo $GITHUB_REPOSITORY)"
+
+
       # 2. Set up Node.js (your version)
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -65,3 +72,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
           publish_branch: gh-pages
+          force_orphan: true
+          clean: true
