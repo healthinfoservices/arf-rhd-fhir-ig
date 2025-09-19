@@ -1,7 +1,7 @@
 <a id="readme-top"></a>
 <div align="center">
   <a href="https://github.com/dfoulkes-au/arf-register-fsh"><img src="docimg/logo.ico" alt="ARF Logo" width="80" height="80"></a>
-  <h2>Acute Rheumatic Fever FHIR IG - Code Package</h2>
+  <h2>Acute Rheumatic Fever FHIR IG - Code Package (updated)</h2>
 </div>
 
 
