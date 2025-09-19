@@ -1,0 +1,23 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-fhir.arfregister.json	8014	-	0	0	0	0	0	0	24	271	0	0	0	0	0	0	0	0	0	0	144	215	0	0	0	4	0	1
+fsh-generated/resources/AllergyIntolerance-MikePondMedicationAllergy.json	1242	19	0	0	0	0	0	0	1	1021	0	0	0	0	0	0	0	0	0	0	28	73	0	0	0	0	0	0
+fsh-generated/resources/CarePlan-MikePondCarePlan.json	954	21	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	18	39	0	0	0	0	0	0
+fsh-generated/resources/Condition-MikePondCondition.json	1596	12	0	0	1	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	20	53	0	0	0	0	0	0
+fsh-generated/resources/MedicationRequest-BicillinMedicationRequest.json	1656	13	0	0	0	0	0	0	1	28	0	0	0	0	0	0	0	0	0	0	22	76	0	0	0	0	0	0
+fsh-generated/resources/MedicationStatement-BicillinMedicationStatement.json	1607	17	0	0	0	0	0	0	0	324	0	0	0	0	0	0	0	1	0	0	22	55	0	0	0	0	0	1
+fsh-generated/resources/Organization-VeryRemoteClinic.json	977	11	0	0	0	0	0	0	1	3	0	0	0	0	0	0	0	0	0	0	21	40	0	0	0	0	0	0
+fsh-generated/resources/Patient-MikePondPatient.json	1250	12	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	18	49	0	0	0	0	0	0
+fsh-generated/resources/Practitioner-DoctorPayne.json	741	10	0	0	0	0	0	0	2	2	0	0	0	0	0	0	0	0	0	0	15	32	0	0	0	0	0	0
+fsh-generated/resources/PractitionerRole-DoctorPayneRole1.json	772	10	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	17	51	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-ARFAllergy.json	1213	11	0	89	0	0	0	0	1	89	0	0	1	0	0	0	0	1	0	0	156	1787	0	0	0	7	1	1
+fsh-generated/resources/StructureDefinition-ARFCarePlan.json	2078	6	0	145	0	0	0	0	0	85	0	0	0	0	0	0	0	1	0	0	218	701	0	0	0	9	0	1
+fsh-generated/resources/StructureDefinition-ARFCondition.json	1418	11	0	152	1	0	0	0	0	125	0	0	0	0	0	0	0	0	0	0	154	1114	0	0	0	6	0	1
+fsh-generated/resources/StructureDefinition-ARFMedicationRequest.json	1755	11	0	149	0	0	0	0	0	99	0	0	0	0	0	0	0	2	0	0	264	2815	0	0	0	14	0	1
+fsh-generated/resources/StructureDefinition-ARFMedicationStatement.json	3389	11	0	107	0	0	0	0	0	72	0	0	0	0	0	0	0	1	0	0	170	318	0	0	0	18	0	1
+fsh-generated/resources/StructureDefinition-ARFOrganisation.json	1232	10	0	147	0	0	0	0	0	62	0	0	0	0	0	0	0	0	0	0	131	333	0	0	0	9	0	1
+fsh-generated/resources/StructureDefinition-ARFPatient.json	1271	10	0	152	0	0	0	0	0	105	0	0	0	0	0	0	0	2	0	0	296	4400	0	0	0	28	1	1
+fsh-generated/resources/StructureDefinition-ARFPractitioner.json	681	10	0	118	0	0	0	0	0	98	0	0	1	0	0	0	0	0	0	0	135	373	0	0	0	6	0	1
+fsh-generated/resources/StructureDefinition-ARFPractitionerRole.json	1540	10	0	91	0	0	0	0	0	65	0	0	0	0	0	0	0	1	0	0	143	293	0	0	0	7	0	1
+fsh-generated/resources/ValueSet-arf-diagnosis-vs.json	1031	9	0	0	0	0	0	0	0	495	0	0	0	0	0	0	0	0	0	1	18	926	0	1	0	0	0	0
+fsh-generated/resources/ValueSet-arf-medication-code-vs.json	1227	10	0	0	0	0	0	0	1	302	0	0	0	0	0	0	0	0	0	0	17	223	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-arf-severity-vs.json	900	10	0	0	0	0	0	0	2	192	0	0	0	0	0	0	0	0	0	0	16	303	0	0	0	0	0	0
