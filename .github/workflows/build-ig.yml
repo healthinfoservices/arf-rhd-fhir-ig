@@ -45,7 +45,7 @@ jobs:
 
       # 7. Run Sushi
       - name: Run Sushi
-        run: sushi . --output ./fsh-generated
+        run: sushi .
 
       # 8. Run IG Publisher
       - name: Run IG Publisher
