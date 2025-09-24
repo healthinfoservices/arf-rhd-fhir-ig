@@ -8,7 +8,7 @@ Description: "An example of a clinic providing health services to ARF patient."
 * identifier.use = #official
 * identifier.type.coding.system = $au-id-type-cs
 * identifier.type.coding.code = #NOI
-* identifier.system = $id-hpio-system
+* identifier.system = $au-hpio-sys
 * identifier.value = "8003621566684455"
 * address.line = "2342 Main Road"
 * address.city = "Coen"
@@ -22,7 +22,7 @@ Description: "Example of Practioner Providing Care for ARF Patient"
 * identifier.use = #official
 * identifier.type.coding.system = $id-type-cs
 * identifier.type.coding.code = #NPI
-* identifier.system = $id-hpii-system
+* identifier.system = $au-hpii-sys
 * identifier.value = "8003619900015717"
 * name
   * given[0] = "Jane"
@@ -39,7 +39,7 @@ Description: "Example of Practioner Providing Care for ARF Patient"
 * identifier.use = #official
 * identifier.type.coding.system = $au-id-type-cs
 * identifier.type.coding.code = #UPIN
-* identifier.system = $id-medicare-provider-system
+* identifier.system = $au-medicare-provider-sys
 * identifier.value = "2426621B"
 * practitioner = Reference(DoctorPayne)
 * organization = Reference(VeryRemoteClinic)
@@ -53,7 +53,7 @@ Description: "An example of a patient recorded in ARF register."
 * identifier.use = #official
 * identifier.type.coding.system = $id-type-cs
 * identifier.type.coding.code = #NI
-* identifier.system = $id-ihi-system
+* identifier.system = $au-ihi-sys
 * identifier.value = "8003608833357361"
 * name
   * given[0] = "Mike"
@@ -72,8 +72,6 @@ Description: "An example of a patient recorded in ARF register."
 Instance: MikePondCondition
 InstanceOf: ARFCondition
 Description: "Example of ARF Condition for Patient."
-* identifier.system = $ARF-register-system
-* identifier.value = "ARF1000123"
 * code.coding.system = $SCT
 * code.coding.code = #195528001
 * code.coding.display = "Acute rheumatic fever" 
