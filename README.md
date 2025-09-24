@@ -1,6 +1,6 @@
 <a id="readme-top"></a>
 <div align="center">
-  <a href="https://github.com/dfoulkes-au/arf-register-fsh"><img src="docimg/logo.ico" alt="ARF Logo" width="80" height="80"></a>
+  <a href="https://github.com/healthinfoservices/arf-rhd-fhir-ig"><img src="docimg/logo.ico" alt="ARF Logo" width="80" height="80"></a>
   <h2>Acute Rheumatic Fever FHIR IG - Code Package (updated)</h2>
 </div>
 
@@ -8,11 +8,12 @@
 ## Overview
 This project contains the FHIR Shorthand (FSH) code for creating an Implementation Guide (IG) for the Diagnosis and Management of Acute Rheumatic Fever (ARF).  It is intended to form the basis for sharing information between multiple health providers - typically using a central national ARF registry.  The data specification could also be used directly for a FHIR based ARF Register.
 
-[Here](https://fhir-arf-register.nardhc.org/) is a deployed example of this IG.
+[Here](https://healthinfoservices.site/arf-rhd-fhir-ig) is a deployed example of this IG.
 
 The code in this project describes a downstream IG based on FHIR AU Core and AU Base specifications (i.e. for the Australian context).  The primary use of this project is expected to be for those who wish to extend this specification and/or to adapt it for a different national context (eg. US Core).   To create the IG from the code included in this project,  you will need to compile the code using Sushi as described below.  
 
-If you simply wish to deploy this IG without modification,  go to [Acute Rheumatic Fever FHIR IG - Deployment Package](https://github.com/dfoulkes-au/arf-register-output) where you can access the html/js files required.
+If you simply wish to deploy this IG without modification,  go to [Acute Rheumatic Fever FHIR IG - Deployment Package](https://github.com/healthinfoservices/arf-rhd-fhir-ig/tree/gh-pages) where you can access the html/js files required.
+  
 
 If you like this, don't forget to give the project a star! Thanks again!
 
@@ -52,12 +53,11 @@ To setup and deploy the IG, first ensure that you have the pre-requisite softwar
 1. Create or go to a folder that you will use for working with the FSH code
 2. Clone this repository by executing:
   ```sh
-  git clone https://github.com/dfoulkes-au/arf-register-fsh.git
+  git clone https://github.com/healthinfoservices/arf-rhd-fhir-ig.git
   ```
-3. Install the FHIR packages listed in the dependencies section of the sushi-config.yaml file (currently these are hl7.fhir.au.core@1.0.0-ballot and hl7.fhir.au.base@4.1.0 but will be updated as newer/normative versions become available).  For example:
+3. Install the FHIR packages listed in the dependencies section of the sushi-config.yaml file (currently these are hl7.fhir.au.core@1.0.0 and hl7.fhir.au.base@5.0.0 but will be updated as newer versions become available).  
   ```sh
-  npm --registry https://packages.simplifier.net install hl7.fhir.au.base@4.1.0
-  npm --registry https://packages.simplifier.net install hl7.fhir.au.core@1.0.0-ballot
+  sushi update-dependencies
   ```
 4. Navigate to the arf-register-fsh directory. Run SUSHI on those FSH files by executing:
   ```sh
@@ -122,25 +122,25 @@ The profiles outlines in this implementation guide support the following primary
 
 This occurs after a patient has received a diagnosis (or suspected diagnosis),  and involves registering a patient for the first time on the registry.   Typically this would be achieved by posting a FHIR bundle containing and instance of each of the following resources:
 
-* [ARF Patient](StructureDefinition-ARFPatient.html) - patient demographic information  [Example](https://fhir-arf-register.nardhc.org/Patient-MikePondPatient.html) [JSON](https://fhir-arf-register.nardhc.org/Patient-MikePondPatient.json.html)
-* [ARF Condition](StructureDefinition-ARFCondition.html) - diagnosis and severity of ARF/RHD condition [Example](https://fhir-arf-register.nardhc.org/Condition-MikePondCondition.html) [JSON](https://fhir-arf-register.nardhc.org/Condition-MikePondCondition.json.html)
-* [ARF Allergy](StructureDefinition-ARFAllergy.html) - any known medication allergies [Example](https://fhir-arf-register.nardhc.org/AllergyIntolerance-MikePondMedicationAllergy.html) [JSON](https://fhir-arf-register.nardhc.org/AllergyIntolerance-MikePondMedicationAllergy.json.html)
+* [ARF Patient](StructureDefinition-ARFPatient.html) - patient demographic information  [Example](https://healthinfoservices.site/arf-rhd-fhir-ig/Patient-MikePondPatient.html) [JSON](https://healthinfoservices.site/arf-rhd-fhir-ig/Patient-MikePondPatient.json.html)
+* [ARF Condition](StructureDefinition-ARFCondition.html) - diagnosis and severity of ARF/RHD condition [Example](https://healthinfoservices.site/arf-rhd-fhir-ig/Condition-MikePondCondition.html) [JSON](https://healthinfoservices.site/arf-rhd-fhir-ig/Condition-MikePondCondition.json.html)
+* [ARF Allergy](StructureDefinition-ARFAllergy.html) - any known medication allergies [Example](https://healthinfoservices.site/arf-rhd-fhir-ig/AllergyIntolerance-MikePondMedicationAllergy.html) [JSON](https://healthinfoservices.site/arf-rhd-fhir-ig/AllergyIntolerance-MikePondMedicationAllergy.json.html)
 
 ### Create CarePlan and Prescribe Medication
 
 This workflow may take place for a newly registered patient, or it be used to record a careplan/prescription for a subsequent or updated care episode.  This process creates (or updates) a Care Plan and a Medication Request resouce (see profiles below) describing frequency and dosage of medications and specifying which Organization(s) and Practitioners will be responsible for the patient care.  Where new information is available (eg. updated phone numbers or disease severity), this process may also optionally be used to update the Patient, Condition or Allergy resources created by the Patient Registration workflow.
 
-* [ARF CarePlan](StructureDefinition-ARFCarePlan.html) - care plan outline and practitioners/providers responsible to deliver the care [Example](https://fhir-arf-register.nardhc.org/CarePlan-MikePondCarePlan.html) [JSON](https://fhir-arf-register.nardhc.org/CarePlan-MikePondCarePlan.json.html)
-* [ARF MedicationRequest](StructureDefinition-ARFMedicationRequest.html) - prescribed frequency and dosage of medication [Example](https://fhir-arf-register.nardhc.org/MedicationRequest-BicillinMedicationRequest.html) [JSON](https://fhir-arf-register.nardhc.org/MedicationRequest-BicillinMedicationRequest.json.html)
-* [ARF Organisation](https://fhir-arf-register.nardhc.org/StructureDefinition-ARFOrganisation.html) - health provider organisation responsible for CarePlan [Example](https://fhir-arf-register.nardhc.org/Organization-VeryRemoteClinic.html) [JSON](https://fhir-arf-register.nardhc.org/Organization-VeryRemoteClinic.json.html)
-* [ARF Practitioner](https://fhir-arf-register.nardhc.org/StructureDefinition-ARFPractitioner.html) - practioner providing care for ARF patient [Example](https://fhir-arf-register.nardhc.org/Practitioner-DoctorPayne.html) [JSON](https://fhir-arf-register.nardhc.org/Practitioner-DoctorPayne.json.html)
-* [ARF PractionerRole](https://fhir-arf-register.nardhc.org/StructureDefinition-ARFPractitionerRole.html) - practioner (medicare provider) role [Example](https://fhir-arf-register.nardhc.org/PractitionerRole-DoctorPayneRole1.html) [JSON](https://fhir-arf-register.nardhc.org/PractitionerRole-DoctorPayneRole1.json.html)
+* [ARF CarePlan](StructureDefinition-ARFCarePlan.html) - care plan outline and practitioners/providers responsible to deliver the care [Example](https://healthinfoservices.site/arf-rhd-fhir-ig/CarePlan-MikePondCarePlan.html) [JSON](https://healthinfoservices.site/arf-rhd-fhir-ig/CarePlan-MikePondCarePlan.json.html)
+* [ARF MedicationRequest](StructureDefinition-ARFMedicationRequest.html) - prescribed frequency and dosage of medication [Example](https://healthinfoservices.site/arf-rhd-fhir-ig/MedicationRequest-BicillinMedicationRequest.html) [JSON](https://healthinfoservices.site/arf-rhd-fhir-ig/MedicationRequest-BicillinMedicationRequest.json.html)
+* [ARF Organisation](https://healthinfoservices.site/arf-rhd-fhir-ig/StructureDefinition-ARFOrganisation.html) - health provider organisation responsible for CarePlan [Example](https://healthinfoservices.site/arf-rhd-fhir-ig/Organization-VeryRemoteClinic.html) [JSON](https://healthinfoservices.site/arf-rhd-fhir-ig/Organization-VeryRemoteClinic.json.html)
+* [ARF Practitioner](https://healthinfoservices.site/arf-rhd-fhir-ig/StructureDefinition-ARFPractitioner.html) - practioner providing care for ARF patient [Example](https://healthinfoservices.site/arf-rhd-fhir-ig/Practitioner-DoctorPayne.html) [JSON](https://healthinfoservices.site/arf-rhd-fhir-ig/Practitioner-DoctorPayne.json.html)
+* [ARF PractionerRole](https://healthinfoservices.site/arf-rhd-fhir-ig/StructureDefinition-ARFPractitionerRole.html) - practioner (medicare provider) role [Example](https://healthinfoservices.site/arf-rhd-fhir-ig/PractitionerRole-DoctorPayneRole1.html) [JSON](https://healthinfoservices.site/arf-rhd-fhir-ig/PractitionerRole-DoctorPayneRole1.json.html)
 
 ### Record Medication Administration
 
 This workflow takes place when a specific instance of the medication request has been administered to the patient.  It creates a single Medication Statement resource recording the date, provider, dosage, route etc. of the medication administration.   This workflow may also optionally update the CarePlan with a different practitioner/provider and or the patient contact details.
 
-* [ARF MedicationStatement](StructureDefinition-ARFMedicationStatement.html) - administered time, dosage, route of medication [Example](https://fhir-arf-register.nardhc.org/MedicationStatement-BicillinMedicationStatement.html) [JSON](https://fhir-arf-register.nardhc.org/MedicationStatement-BicillinMedicationStatement.json.html)
+* [ARF MedicationStatement](StructureDefinition-ARFMedicationStatement.html) - administered time, dosage, route of medication [Example](https://healthinfoservices.site/arf-rhd-fhir-ig/MedicationStatement-BicillinMedicationStatement.html) [JSON](https://healthinfoservices.site/arf-rhd-fhir-ig/MedicationStatement-BicillinMedicationStatement.json.html)
 
 ### Query Status of the Patient
 
@@ -162,7 +162,7 @@ Major epics under consideration include:
 - Elaborate and add workflows and profiles for Rheumatic Heart Disease (RHD)
 - Fork project for 'International' version with dependencies on standard (not country specific) FHIR profiles
 
-See the [open issues](https://github.com/github/dfoulkes-au/arf-register-fsh/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/github/healthinfoservices/arf-rhd-fhir-ig/issues) for a list of proposed features (and known issues).
 
 
 ## About the Project
@@ -188,8 +188,9 @@ Distributed under the MIT License. See [LICENSE.txt][license-url] for more infor
 
 ### Contacts
 
-* [Northern Australian Regional Digital Health Collaborative][linkedin-nardhc-url]
+* [Health Info Services][healthinfoservices-url]
 * [Daniel Foulkes][linkedin-df-url]
+with acknowledgement to prior work by Northern Australian Regional Digital Health Collaborative (NARDHC)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,9 +204,9 @@ Distributed under the MIT License. See [LICENSE.txt][license-url] for more infor
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-df-url]: https://www.linkedin.com/in/daniel-foulkes/
-[linkedin-nardhc-url]: https://www.linkedin.com/company/101721851
+[healthinfoservices-url]: https://www.linkedin.com/company/101721851
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg
 [fsh-badge]: https://fshschool.org/favicon.ico
 [fsh-url]: https://fshschool.org/
-[license-url]: https://github.com/dfoulkes-au/arf-register-fsh/blob/main/LICENSE.txt
+[license-url]: https://healthinfoservices/arf-rhd-fhir-ig/blob/main/LICENSE.txt
 
