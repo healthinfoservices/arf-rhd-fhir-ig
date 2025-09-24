@@ -1,0 +1,1038 @@
+{
+  "date" : "Wed, 24 Sep, 2025 00:26:47 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-fhir.arfregister.json",
+      "size" : 8014,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 20
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 43,
+          "length" : 11
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 242
+        },
+        {
+          "activity" : "validate",
+          "start" : 81,
+          "length" : 3009
+        },
+        {
+          "activity" : "generate1",
+          "start" : 97,
+          "length" : 88
+        },
+        {
+          "activity" : "generate2",
+          "start" : 100,
+          "length" : 99
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 141,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/AllergyIntolerance-MikePondMedicationAllergy.json",
+      "size" : 1242,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 8
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 661
+        },
+        {
+          "activity" : "validate",
+          "start" : 84,
+          "length" : 1331
+        },
+        {
+          "activity" : "generate1",
+          "start" : 97,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 100,
+          "length" : 28
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CarePlan-MikePondCarePlan.json",
+      "size" : 954,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 5
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 43,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 97,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 100,
+          "length" : 31
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Condition-MikePondCondition.json",
+      "size" : 1460,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 929
+        },
+        {
+          "activity" : "generate1",
+          "start" : 97,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 100,
+          "length" : 30
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MedicationRequest-BicillinMedicationRequest.json",
+      "size" : 1656,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 6
+        },
+        {
+          "activity" : "scan",
+          "start" : 43,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 86,
+          "length" : 2069
+        },
+        {
+          "activity" : "generate1",
+          "start" : 97,
+          "length" : 21
+        },
+        {
+          "activity" : "generate2",
+          "start" : 100,
+          "length" : 46
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MedicationStatement-BicillinMedicationStatement.json",
+      "size" : 1607,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 5
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 43,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 344
+        },
+        {
+          "activity" : "validate",
+          "start" : 88,
+          "length" : 545
+        },
+        {
+          "activity" : "generate1",
+          "start" : 97,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 100,
+          "length" : 43
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 141,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-VeryRemoteClinic.json",
+      "size" : 977,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 5
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 43,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 89,
+          "length" : 3794
+        },
+        {
+          "activity" : "generate1",
+          "start" : 97,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 100,
+          "length" : 25
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-MikePondPatient.json",
+      "size" : 1250,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 10
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 93,
+          "length" : 4185
+        },
+        {
+          "activity" : "generate1",
+          "start" : 97,
+          "length" : 20
+        },
+        {
+          "activity" : "generate2",
+          "start" : 100,
+          "length" : 34
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Practitioner-DoctorPayne.json",
+      "size" : 741,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 10
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 97,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 97,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 100,
+          "length" : 21
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PractitionerRole-DoctorPayneRole1.json",
+      "size" : 772,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 43,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 97,
+          "length" : 25
+        },
+        {
+          "activity" : "generate1",
+          "start" : 97,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 100,
+          "length" : 24
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ARFAllergy.json",
+      "size" : 1213,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 47
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 55
+        },
+        {
+          "activity" : "validate",
+          "start" : 48,
+          "length" : 11692
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 97,
+          "length" : 166
+        },
+        {
+          "activity" : "generate2",
+          "start" : 100,
+          "length" : 1581
+        },
+        {
+          "activity" : "generate2",
+          "start" : 112,
+          "length" : 2505
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ARFCarePlan.json",
+      "size" : 2078,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 41,
+          "length" : 6
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 74
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 74
+        },
+        {
+          "activity" : "validate",
+          "start" : 59,
+          "length" : 423
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 97,
+          "length" : 214
+        },
+        {
+          "activity" : "generate2",
+          "start" : 102,
+          "length" : 541
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 407
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 9
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 141,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ARFCondition.json",
+      "size" : 1277,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 79
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 35
+        },
+        {
+          "activity" : "validate",
+          "start" : 60,
+          "length" : 2367
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 98,
+          "length" : 156
+        },
+        {
+          "activity" : "generate2",
+          "start" : 103,
+          "length" : 862
+        },
+        {
+          "activity" : "generate2",
+          "start" : 115,
+          "length" : 216
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 8
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 141,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ARFMedicationRequest.json",
+      "size" : 1755,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 95
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 27
+        },
+        {
+          "activity" : "validate",
+          "start" : 62,
+          "length" : 6270
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 98,
+          "length" : 243
+        },
+        {
+          "activity" : "generate2",
+          "start" : 103,
+          "length" : 2336
+        },
+        {
+          "activity" : "generate2",
+          "start" : 116,
+          "length" : 504
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 14
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 141,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 141,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ARFMedicationStatement.json",
+      "size" : 3389,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 58
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 68,
+          "length" : 2034
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 98,
+          "length" : 162
+        },
+        {
+          "activity" : "generate2",
+          "start" : 106,
+          "length" : 270
+        },
+        {
+          "activity" : "generate2",
+          "start" : 116,
+          "length" : 192
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 8
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 141,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ARFOrganisation.json",
+      "size" : 1384,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 11
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 56
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 43,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 2102
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 98,
+          "length" : 134
+        },
+        {
+          "activity" : "generate2",
+          "start" : 106,
+          "length" : 238
+        },
+        {
+          "activity" : "generate2",
+          "start" : 116,
+          "length" : 129
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ARFPatient.json",
+      "size" : 1271,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 14
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 83
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 33
+        },
+        {
+          "activity" : "validate",
+          "start" : 73,
+          "length" : 4350
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 98,
+          "length" : 259
+        },
+        {
+          "activity" : "generate2",
+          "start" : 106,
+          "length" : 4175
+        },
+        {
+          "activity" : "generate2",
+          "start" : 116,
+          "length" : 284
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 15
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 141,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ARFPractitioner.json",
+      "size" : 681,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 65
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 16
+        },
+        {
+          "activity" : "validate",
+          "start" : 77,
+          "length" : 368
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 99,
+          "length" : 125
+        },
+        {
+          "activity" : "generate2",
+          "start" : 110,
+          "length" : 314
+        },
+        {
+          "activity" : "generate2",
+          "start" : 117,
+          "length" : 141
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 8
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 141,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ARFPractitionerRole.json",
+      "size" : 1540,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 42,
+          "length" : 50
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 43,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 77,
+          "length" : 3694
+        },
+        {
+          "activity" : "generate1",
+          "start" : 99,
+          "length" : 99
+        },
+        {
+          "activity" : "generate2",
+          "start" : 111,
+          "length" : 296
+        },
+        {
+          "activity" : "generate2",
+          "start" : 117,
+          "length" : 132
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-arf-diagnosis-vs.json",
+      "size" : 1031,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 510
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 1245
+        },
+        {
+          "activity" : "generate1",
+          "start" : 99,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 111,
+          "length" : 793
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-arf-medication-code-vs.json",
+      "size" : 1227,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 351
+        },
+        {
+          "activity" : "validate",
+          "start" : 47,
+          "length" : 463
+        },
+        {
+          "activity" : "generate1",
+          "start" : 99,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 112,
+          "length" : 238
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 120,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-arf-severity-vs.json",
+      "size" : 900,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 6
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 43,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 230
+        },
+        {
+          "activity" : "validate",
+          "start" : 47,
+          "length" : 458
+        },
+        {
+          "activity" : "generate1",
+          "start" : 99,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 112,
+          "length" : 303
+        }
+      ]
+    }
+  ]
+}
